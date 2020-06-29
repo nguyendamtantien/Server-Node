@@ -12,9 +12,9 @@ const bodyParser = require('body-parser');
 	app.use(bodyParser.json());
 	
 	
-	// app.listen(8000, () => {
-	// 	console.log('Server started!');
-	//   });
+	app.listen(8000, () => {
+		console.log('Server started!');
+	  });
 	app.route('/api/position').get((req, res) => {
 	  console.log('position');
 		res.send([{Name:'KinhDoanh', id:'a01' }, { Name:'VanPhong', id:'a02' }]
